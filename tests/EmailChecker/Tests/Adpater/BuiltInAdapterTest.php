@@ -28,7 +28,7 @@ class BuiltInAdapterTest extends TestCase
     /**
      * @dataProvider throwawayDomains
      */
-    public function testThrowawayDomains($domain)
+    public function testThrowawayDomains($domain): void
     {
         $this->assertTrue($this->adapter->isThrowawayDomain($domain));
     }
@@ -77,6 +77,10 @@ class BuiltInAdapterTest extends TestCase
             ['xemaps.com'],
             ['xmail.com'],
             ['yopmail.com'],
+            ['12gmail.com'],
+            ['abagmail.com'],
+            ['01cicloud.com'],
+            ['66bhotmail.com'],
         ];
     }
 }

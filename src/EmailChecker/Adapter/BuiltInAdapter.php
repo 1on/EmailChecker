@@ -12,6 +12,7 @@
 namespace EmailChecker\Adapter;
 
 use EmailChecker\ThrowawayDomains;
+use EmailChecker\ThrowawayDomainsRegex;
 
 /**
  * Built-in adapter.
@@ -26,10 +27,21 @@ use EmailChecker\ThrowawayDomains;
 class BuiltInAdapter implements AdapterInterface
 {
     protected $domains;
+    protected $domainsRegex;
 
     public function isThrowawayDomain($domain)
     {
-        return in_array($domain, $this->getDomains());
+        $isThrowaway = in_array($domain, $this->getDomains());
+        if ($isThrowaway) {
+            return true;
+        }
+        foreach ($this->getDomainsRegex() as $domainRegex) {
+            if (preg_match("/{$domainRegex}/", $domain)) {
+                return true;
+            }
+        }
+
+        return false;
     }
 
     private function getDomains()
@@ -39,5 +51,14 @@ class BuiltInAdapter implements AdapterInterface
         }
 
         return $this->domains;
+    }
+
+    private function getDomainsRegex()
+    {
+        if (null === $this->domainsRegex) {
+            $this->domainsRegex = (new ThrowawayDomainsRegex())->toArray();
+        }
+
+        return $this->domainsRegex;
     }
 }

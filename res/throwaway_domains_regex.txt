@@ -1,0 +1,3 @@
+[a-z0-9]+gmail.com
+[a-z0-9]+hotmail.com
+[a-z0-9]+icloud.com
