@@ -33,6 +33,14 @@ class BuiltInAdapterTest extends TestCase
         $this->assertTrue($this->adapter->isThrowawayDomain($domain));
     }
 
+    /**
+     * @dataProvider notThrowawayDomains
+     */
+    public function testNotThrowawayDomains($domain): void
+    {
+        $this->assertFalse($this->adapter->isThrowawayDomain($domain));
+    }
+
     public static function throwawayDomains()
     {
         // List of some of the built-in throwaway domains
@@ -81,6 +89,33 @@ class BuiltInAdapterTest extends TestCase
             ['abagmail.com'],
             ['01cicloud.com'],
             ['66bhotmail.com'],
+            ['gamail.com'],
+            ['aamail.com'],
+            ['amail.com'],
+            ['gmaail.com'],
+            ['gaaail.com'],
+            ['gaail.com'],
+            ['gmcil.com'],
+            ['gmacil.com'],
+            ['gmccil.com'],
+            ['gmacl.com'],
+            ['gmaicl.com'],
+            ['gmaccl.com'],
+            ['gmaic.com'],
+            ['gmailc.com'],
+            ['gmaicc.com'],
+        ];
+    }
+
+    public static function notThrowawayDomains()
+    {
+        return [
+            ['gmail.com'],
+            ['gmail.fr'],
+            ['hotmail.com'],
+            ['hotmail.fr'],
+            ['icloud.com'],
+            ['icloud.fr'],
         ];
     }
 }
