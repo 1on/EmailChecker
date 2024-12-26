@@ -1,3 +1,8 @@
 [a-z0-9]+gmail.com
+[a-z0-9]{1,2}mail.com
+g[a-z0-9]{1,2}ail.com
+gm[a-z0-9]{1,2}il.com
+gma[a-z0-9]{1,2}l.com
+gmai[a-z0-9]{1,2}.com
 [a-z0-9]+hotmail.com
 [a-z0-9]+icloud.com
