@@ -1990,7 +1990,6 @@ spamthis.co.uk
 spamthisplease.com
 spamtrail.com
 spamtroll.net
-spb.ru
 speed.1s.fr
 speedgaus.net
 spikio.com
@@ -2578,3 +2577,5 @@ paxnw.com
 xn--mail-pwa.com
 iclou.com
 gmaip.com
+chnlog.com
+qopow.com
