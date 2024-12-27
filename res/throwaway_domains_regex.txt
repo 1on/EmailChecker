@@ -11,3 +11,15 @@
 ^gmai[^l][a-z0-9]?.com
 ^[a-z0-9]+hotmail.com
 ^[a-z0-9]+icloud.com
+^i[a-z0-9]{1,2}cloud.com
+^[^i][a-z0-9]?cloud.com
+^ic[a-z0-9]{1,2}loud.com
+^i[^c][a-z0-9]?loud.com
+^icl[a-z0-9]{1,2}oud.com
+^ic[^l][a-z0-9]?oud.com
+^iclo[a-z0-9]{1,2}ud.com
+^icl[^o][a-z0-9]?ud.com
+^iclou[a-z0-9]{1,2}d.com
+^iclo[^u][a-z0-9]?d.com
+^icloud[a-z0-9]{1,2}.com
+^iclou[^d][a-z0-9]?.com

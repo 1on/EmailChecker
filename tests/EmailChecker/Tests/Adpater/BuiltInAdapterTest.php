@@ -104,6 +104,18 @@ class BuiltInAdapterTest extends TestCase
             ['gmaic.com'],
             ['gmailc.com'],
             ['gmaicc.com'],
+            ['bcloud.com'],
+            ['ibcloud.com'],
+            ['ibloud.com'],
+            ['icbloud.com'],
+            ['icboud.com'],
+            ['iclboud.com'],
+            ['iclbud.com'],
+            ['iclobud.com'],
+            ['iclobd.com'],
+            ['icloubd.com'],
+            ['icloub.com'],
+            ['icloudb.com'],
         ];
     }
 
