@@ -2656,7 +2656,6 @@ mailto.plus
 duck.com
 fbk.ru
 rasl.nw.ru
-mvd.ru
 bellsouth.net
 divier.ru
 setters.me
